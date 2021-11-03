@@ -1,0 +1,42 @@
+<!-- include header -->
+<%-include('include/_header') %>
+
+<!-- /include header -->
+
+
+
+
+<div class="bigdiv">
+    <div class="bigsign_div">
+        <div class="medium" >Sign Up</div>
+        <div class="signup_div">
+            <form action="/api/users" method="POST">
+                <input required type="text" id="myName" class="myName" name="name" placeholder="John Doe" ><i class="far fa-check-circle" id="checkname"></i><i class="far fa-times-circle" id="cancelname"></i><br>
+                <input required type="text" id="myUsername" class="myUsername" name="username" placeholder="john_doe"><i class="far fa-check-circle" id="checkusername"></i><i class="far fa-times-circle" id="cancelusername"></i><br>
+                <input required type="email" id="myEmail" class="myEmail" name="email" placeholder="johndoe@gmail.com"><i class="far fa-check-circle" id="checkemail"></i><i class="far fa-times-circle" id="cancelemail"></i><br>
+                <input required type="password" id="myPassword" class="myPassword" name="password" placeholder="********"><i class="far fa-check-circle" id="checkpassword"></i><i class="far fa-times-circle" id="cancelpassword"></i><br>
+                <button class="sign-button">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <div class="biglog_div">
+    <div class="medium2"> Log in</div>
+       <div class="login_div">  
+           <form action="/api/users/login" method="POST">
+                <input name="email" id="logEmail" class="logEmail" required type="email" placeholder="johndoe@gmail.com"><i class="far fa-check-circle" id="checklog-email"></i><i class="far fa-times-circle" id="cancelog-email"></i><br>
+                <input name="password" id="logPassword" class="logPassword" required type="password" placeholder="***********"><i class="far fa-check-circle" id="checklog-pass"></i><i class="far fa-times-circle" id="cancelog-pass"></i><br><br><br>
+                <button id="log-div">Log in</button>
+           </form>
+       </div>
+       </div> 
+</div>
+
+
+
+
+
+
+<!-- include footer -->
+<%-include('include/_footer') %>
+
+<!-- /include footer -->
